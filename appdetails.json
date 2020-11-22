@@ -8,21 +8,39 @@
   }],
   "blocked":[
     {"id":0, "app":"com.android.game"},
-    {"id":1, "app":"com.utorrent.client"},
-    {"id":2, "app":"com.torrent.client"},
-    {"id":3, "app":"com.tor.client"},
-    {"id":4, "app":"com.insta.client"},
-    {"id":5, "app":"com.facebook.client"},
-    {"id":6, "app":"com.get.client"}
+    {"id":1, "app":"ir.hafhashtad.android780"},
+    {"id":2, "app":"com.bpm.sekeh"},
+    {"id":3, "app":"com.adpdigital.mbs.ayande"},
+    {"id":4, "app":"ir.tejaratbank.tata.mobile.android.tejarat"},
+    {"id":5, "app":"ir.tejaratbank.totp.mobile.android"},
+    {"id":6, "app":"ir.bmi.bam.nativeweb"},
+    {"id":7, "app":"nuesoft.mobileToken"},
+    {"id":8, "app":"ir.stsepehr.hamrahcard"},
+    {"id":9, "app":"net.iranet.isc.sotp"},
+    {"id":10, "app":"ir.instadownloader.barnamesazb"},
+    {"id":11, "app":"com.bki.mobilebanking.android"},
+    {"id":12, "app":"com.behsazan.mobilebank"},
+    {"id":13, "app":"co.nilin.izmb"},
+    {"id":14, "app":"mob.banking.android.sepah"},
+    {"id":15, "app":"com.bpm.mellatdynamicpin"},
+    {"id":16, "app":"mob.banking.android.pasargad"},
+    {"id":17, "app":"com.pooyabyte.mb.android"},
+    {"id":18, "app":"com.parsmobapp"},
+    {"id":19, "app":"ir.sep.sesoot"},
+    {"id":20, "app":"com.hafizco.mobilebankansar"},
+    {"id":21, "app":"com.adpdigital.shahrbank"},
+    {"id":22, "app":"com.sadadpsp.eva"},
+    {"id":23, "app":"com.etick.mobilemancard"},
+    {"id":24, "app":"ir.refahotp.refahotp"},
+    {"id":25, "app":"com.behestan.mbank"},
+    {"id":26, "app":"com.dara.cityBankOtp"},
+    {"id":27, "app":"com.behestan.mbank"},
+    {"id":28, "app":"com.ada.mbank.sina"}
   ],
   "free":[
-    {"id":0, "file":1, "city":"آلمان","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
-    {"id":1, "file":0, "city":"لوکزامبرگ","country":"Germany","image":"luxemburg","ip":"51.68.191.75","active":"true","signal":"b"},
-    {"id":2, "file":0, "city":"امریکا","country":"United States","image":"unitedstates","ip":"205.185.119.100","active":"true","signal":"c"},
-    {"id":3, "file":0, "city":"تایلند","country":"United States","image":"thailand","ip":"205.185.119.100","active":"true","signal":"c"},
-    {"id":4, "file":0, "city":"انگلیس","country":"United States","image":"unitedkingdom","ip":"205.185.119.100","active":"true","signal":"a"},
-    {"id":5, "file":0, "city":"سنگاپور","country":"United States","image":"singapore","ip":"205.185.119.100","active":"true","signal":"c"},
-    {"id":6, "file":0, "city":"سیدنی","country":"United States","image":"australia","ip":"205.185.119.100","active":"true","signal":"c"}
+    {"id":0, "file":0, "city":"آلمان","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
+    {"id":1, "file":1, "city":"ترکیه","country":"Turky","image":"turky","ip":"51.68.191.75","active":"true","signal":"a"},
+    {"id":2, "file":2, "city":"امریکا","country":"United States","image":"unitedstates","ip":"205.185.119.100","active":"true","signal":"a"}
     
   ]
 }
