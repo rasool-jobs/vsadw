@@ -125,7 +125,6 @@ key-direction 1
 verb 3
 auth-nocache
 auth-user-pass
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIE1jCCA76gAwIBAgIJAIMyS4unX0jjMA0GCSqGSIb3DQEBBQUAMIGiMQswCQYD
