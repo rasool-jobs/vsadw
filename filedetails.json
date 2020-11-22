@@ -109,8 +109,7 @@ b0188eba6ebdd7768a12ba6bd15f0a4d
 385edbdbd4dc9e8beb34b6670f518f5e
 5ed586ebc4d2574409a5a208ea11d91e
 -----END OpenVPN Static key V1-----
-</tls-auth>
-"},
+</tls-auth>"},
     {"id":1,"file":"client
 dev tun
 proto udp
@@ -220,9 +219,6 @@ hmNiU3Z5nMVswE72eiRH0gG2oJc=
 -----END PRIVATE KEY-----
 </key>
 <tls-auth>
-#
-# 2048 bit OpenVPN static key
-#
 -----BEGIN OpenVPN Static key V1-----
 f1adfa181129afecc52e2dea34c35aa1
 4a922d379c6b9f44a23b697002aa225d
@@ -241,8 +237,7 @@ d54244b63e5ea475b80a1c1c134eacca
 adaecacc8c59bea09315aeec7dd33eb8
 5cba806517bc2564b1d39b8cb652c6ac
 -----END OpenVPN Static key V1-----
-</tls-auth>
-"},
+</tls-auth>"},
     {"id":2,"file":"client
 dev tun
 proto udp
@@ -352,7 +347,6 @@ b0188eba6ebdd7768a12ba6bd15f0a4d
 385edbdbd4dc9e8beb34b6670f518f5e
 5ed586ebc4d2574409a5a208ea11d91e
 -----END OpenVPN Static key V1-----
-</tls-auth>
-"}
-  ]
+</tls-auth>"},
+     {"id":3,"file":""}]
 }
