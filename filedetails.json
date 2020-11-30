@@ -5,7 +5,7 @@ dev tun
 proto udp
 sndbuf 0
 rcvbuf 0
-remote open1.sib-tech-jobs.ir 1194
+remote 188.40.212.123 1194
 resolv-retry infinite
 auth-user-pass
 nobind
