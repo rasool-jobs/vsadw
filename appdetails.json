@@ -17,6 +17,6 @@
   "free":[
     {"id":0, "file":0, "city":"آلمان","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
     {"id":1, "file":1, "city":"ترکیه","country":"Turky","image":"turky","ip":"51.68.191.75","active":"true","signal":"a"},
-    {"id":2, "file":2, "city":"امریکا","country":"UnitedStates","image":"unitedstates","ip":"134.209.112.73","active":"true","signal":"a"},
+    
   ]
 }
