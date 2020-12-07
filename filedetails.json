@@ -111,130 +111,181 @@ b0188eba6ebdd7768a12ba6bd15f0a4d
 -----END OpenVPN Static key V1-----
 </tls-auth>"},
     {"id":1,"file":"client
-dev tun
+dev tun2
 proto udp
-remote ov2.sib-tech-jobs.ir 82
+sndbuf 0
+rcvbuf 0
+remote 178.62.244.134 1194
+auth-user-pass
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
 remote-cert-tls server
+auth SHA512
 cipher AES-256-CBC
 comp-lzo
+setenv opt block-outside-dns
 key-direction 1
 verb 3
-auth-nocache
-auth-user-pass
 <ca>
 -----BEGIN CERTIFICATE-----
-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
+MIIDKzCCAhOgAwIBAgIJAJjBPX+OdiwGMA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
+BAMMCENoYW5nZU1lMB4XDTIwMTIwNzE4MDQzOFoXDTMwMTIwNTE4MDQzOFowEzER
+MA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQC9Xdftn3t3ujXyPVd+6LnmWh2k0CIHQKIY5RU7jQa9VH1ns9coDMgXFgtTFhTF
+BgwnbFfm4zyFCRg1EznminIQ4e1OulChTzEJUgTXbij7sB8d0GyUnI0MpiFwDJKK
+DnbfbUdpDCCed3QLqYujcgbdlCS3kjdszDaqiKRdwifYoX5ZLaPBwnhF7nw54GYa
+QxW+WxekI3zuzPaNvxxlBAhupuhYO4FFqox+rFQ/z3WUBjwf2gxm0dAUsZN8LJqW
+llsuQCAui6k7dZMJntNEDM/be3npOIMNeZ6sGi/jwGZXjGXP1ngbW4Qg8axRXGlK
+AT6VtoqrSeVx7kKsffx/0r4vAgMBAAGjgYEwfzAdBgNVHQ4EFgQUYm9mp+r1nJiF
+sWFEg01vkyj6D4UwQwYDVR0jBDwwOoAUYm9mp+r1nJiFsWFEg01vkyj6D4WhF6QV
+MBMxETAPBgNVBAMMCENoYW5nZU1lggkAmME9f452LAYwDAYDVR0TBAUwAwEB/zAL
+BgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBAKfwFNNysqYYqteY/pXS/23b
+/UuBtsXUvQ3hYzNYPwt2tb8PM/TXt2adlDdI8t01OKairDZ3T71cid0jCLq/LDpZ
+Ag/fED6Vr8o9AYpY6zvgNqpPr2zWETDUd5LzXY72uE1tnLvOlWezxuE0X9ow3o+V
+B6lgfRPu9C+4R9gbnmEhc2eWVn32GYExZfXhRJyXqWtNPnZG383wyV71y7xsYrBf
+QLRrkUA43pRdLTlOXrFU8QwXI6nvAg0YwR2DcXyIhtn6GTP5FuTJ15FOXPPwlqY9
+chlfB88HdMVpyjv8DYbARJ7L/287uRsweMzyvQA4mxe+uILGJQzrONbLBoZmtbM=
 -----END CERTIFICATE-----
 </ca>
 <cert>
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            1d:43:e2:1d:41:99:bd:4a:39:de:f4:ee:a8:55:f8:f7
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=ChangeMe
+        Validity
+            Not Before: Dec  7 18:04:42 2020 GMT
+            Not After : Dec  5 18:04:42 2030 GMT
+        Subject: CN=client
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a7:eb:71:7b:11:cd:15:6c:63:8f:94:78:33:a4:
+                    eb:79:59:9e:b9:ad:7f:ce:b5:b8:de:d7:21:58:4e:
+                    f9:ba:75:4e:97:f3:58:c2:e5:2e:f0:de:67:fe:7c:
+                    60:f6:66:b4:78:81:d0:27:9b:06:47:7e:0b:3d:34:
+                    52:4b:df:17:c2:30:6c:6e:da:d3:4f:dc:87:bb:a0:
+                    22:66:ab:e3:32:35:18:72:e2:db:0c:d0:60:3a:ba:
+                    9b:f5:3c:9c:3d:e6:41:95:7b:0f:19:b9:40:c2:6a:
+                    c7:1c:4e:5f:61:97:3f:a9:d3:e8:85:cc:2f:01:29:
+                    17:c9:39:d0:4c:e8:e0:6b:05:06:9f:0a:52:08:81:
+                    c3:c7:a0:43:3e:ca:b9:36:33:b9:3c:06:de:35:ea:
+                    84:22:02:11:33:43:a8:ed:24:0b:66:f5:9b:9b:e7:
+                    f7:e8:53:28:32:28:23:03:6b:05:64:db:e8:3a:cd:
+                    71:76:c6:2a:0d:9a:29:e3:6c:3d:91:39:c9:f6:a8:
+                    d4:dc:47:5a:5c:55:d3:0e:ea:f4:59:e3:f8:b8:d8:
+                    73:d5:d3:89:04:47:c3:9c:0f:56:49:c2:dc:fc:b9:
+                    04:5c:85:73:18:b4:f4:c8:15:8f:cf:32:82:2a:f4:
+                    4e:4f:b6:24:a5:79:1f:2e:99:af:01:72:1c:34:52:
+                    5e:7b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                4C:16:05:B5:4B:D2:50:DE:37:F0:27:8F:66:93:AA:F9:2A:E3:12:EA
+            X509v3 Authority Key Identifier: 
+                keyid:62:6F:66:A7:EA:F5:9C:98:85:B1:61:44:83:4D:6F:93:28:FA:0F:85
+                DirName:/CN=ChangeMe
+                serial:98:C1:3D:7F:8E:76:2C:06
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+         bb:4e:c4:f2:1f:8f:c1:b3:b5:cc:25:3c:ed:b8:10:41:3b:17:
+         77:b4:76:6e:2a:2f:10:f4:c6:3f:b2:53:43:e4:45:02:cb:5d:
+         ae:8e:3f:75:44:5d:3c:83:b4:35:68:70:55:f9:a0:29:69:94:
+         07:9b:a6:f9:f0:d8:eb:ef:07:39:b1:0a:fc:80:99:60:29:65:
+         d0:3c:e3:b4:1b:3a:8a:e8:00:6f:19:df:96:0e:5d:18:99:a9:
+         07:09:d5:37:36:27:3e:2a:3b:ee:de:15:e6:a1:bf:18:42:03:
+         59:f9:f1:e4:12:af:4c:69:ed:f9:e0:b6:77:66:45:bb:5d:15:
+         64:b9:58:5a:a8:42:db:4d:8e:75:60:b0:56:f3:b9:80:bd:8d:
+         0d:50:64:9f:12:c9:8c:0b:b0:57:19:5a:8d:e3:af:d0:62:e2:
+         80:64:c1:9c:c6:6c:bb:c7:b6:40:a7:c8:3e:99:19:dd:43:5d:
+         55:be:63:43:64:cf:b1:d8:0d:33:71:9d:5d:75:8e:64:15:b5:
+         c7:c7:df:47:d5:10:c5:bd:25:2f:f9:77:cb:f3:34:d1:9a:6d:
+         13:94:cc:30:97:e9:4c:9e:8d:ca:f5:81:58:0f:0d:88:77:f7:
+         d2:7f:b5:d1:3e:53:8c:01:c9:89:bb:b1:91:99:a2:70:bf:ac:
+         d1:4f:e1:aa
 -----BEGIN CERTIFICATE-----
-MIIFGjCCBAKgAwIBAgIBAjANBgkqhkiG9w0BAQUFADCBojELMAkGA1UEBhMCVVMx
-CzAJBgNVBAgTAkNBMRUwEwYDVQQHEwxTYW5GcmFuY2lzY28xFTATBgNVBAoTDEZv
-cnQtRnVuc3RvbjERMA8GA1UECxMIY2hhbmdlbWUxETAPBgNVBAMTCGNoYW5nZW1l
-MREwDwYDVQQpEwhjaGFuZ2VtZTEfMB0GCSqGSIb3DQEJARYQbWFpbEBob3N0LmRv
-bWFpbjAeFw0xODA1MjQwNDU0MjVaFw0yODA1MjEwNDU0MjVaMIGgMQswCQYDVQQG
-EwJVUzELMAkGA1UECBMCQ0ExFTATBgNVBAcTDFNhbkZyYW5jaXNjbzEVMBMGA1UE
-ChMMRm9ydC1GdW5zdG9uMREwDwYDVQQLEwhjaGFuZ2VtZTEPMA0GA1UEAxMGY2xp
-ZW50MREwDwYDVQQpEwhjaGFuZ2VtZTEfMB0GCSqGSIb3DQEJARYQbWFpbEBob3N0
-LmRvbWFpbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM5odf5r3PaL
-qYUkVhLcii0Lmo1cwMwQxdYGm1rN+3AI1EPBn3cbi5jxlDhBgIJacSR7Sf5rn8yQ
-WZUW99JdcPkn4Y2Ta6hbaaGR8jByBeDRumiIj1RzbZlT2+6p4bhZ9E69f+y/AJhu
-/j/7eeSodNuqZH630YnglsR+Ylh0ldXq+9dZYV0NZiCF5RjkmAHKf3Wn7UTTlVuF
-zw4fh+yjOm1iRfgvFchsFO0tTamvG+yK3Przt4IpczdWd8WevDYdF76O+dj3LOxf
-GR01Fv78ka7aFwY3DFaKdyPsZIpkwsv+fMBfbfU7MNv7ThJ6yJnllzr8Q1uaiuYs
-sMd39cMVeaUCAwEAAaOCAVkwggFVMAkGA1UdEwQCMAAwLQYJYIZIAYb4QgENBCAW
-HkVhc3ktUlNBIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUjsLe79HM
-pyguggBKP/73UbTVSDYwgdcGA1UdIwSBzzCBzIAUc60BHkNQ/s5ffp7L4og8kqLm
-Is+hgaikgaUwgaIxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEVMBMGA1UEBxMM
-U2FuRnJhbmNpc2NvMRUwEwYDVQQKEwxGb3J0LUZ1bnN0b24xETAPBgNVBAsTCGNo
-YW5nZW1lMREwDwYDVQQDEwhjaGFuZ2VtZTERMA8GA1UEKRMIY2hhbmdlbWUxHzAd
-BgkqhkiG9w0BCQEWEG1haWxAaG9zdC5kb21haW6CCQCDMkuLp19I4zATBgNVHSUE
-DDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQEFBQADggEBAG5q
-yR23MlyhgMSgz/yWvBhMcdaJ9ewmU/3hLeoxPoWAF+cJvlw2U/CocYyK3zqtYlWY
-Cvf+lrfldvaFnFc0uxjgWbLsiFms8kwGvvyK4gaZIkAS1k/b4iyj9gnrDoLk9n/b
-0XWiYcDLMnMkBAhRSdH7S8XJiD80u5FBgpw6Mfbd4Xzyufc5ez22ejMDdBXbuZTc
-WQ/Ly+J8eJwDJqPswJHj1uvAgerKsASi8gBjHjRLmOg/Xm4d9spDvqtXCbRuSynu
-KfK2Txf+xLUSRJyDDUB9G7UxyX2/2dnURvuZgwUusA5ZwPKC3pyn0fgETvOaHVWz
-mLom2Nba8YKWDJ3E8vo=
+MIIDQzCCAiugAwIBAgIQHUPiHUGZvUo53vTuqFX49zANBgkqhkiG9w0BAQsFADAT
+MREwDwYDVQQDDAhDaGFuZ2VNZTAeFw0yMDEyMDcxODA0NDJaFw0zMDEyMDUxODA0
+NDJaMBExDzANBgNVBAMMBmNsaWVudDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKfrcXsRzRVsY4+UeDOk63lZnrmtf861uN7XIVhO+bp1TpfzWMLlLvDe
+Z/58YPZmtHiB0CebBkd+Cz00UkvfF8IwbG7a00/ch7ugImar4zI1GHLi2wzQYDq6
+m/U8nD3mQZV7Dxm5QMJqxxxOX2GXP6nT6IXMLwEpF8k50Ezo4GsFBp8KUgiBw8eg
+Qz7KuTYzuTwG3jXqhCICETNDqO0kC2b1m5vn9+hTKDIoIwNrBWTb6DrNcXbGKg2a
+KeNsPZE5yfao1NxHWlxV0w7q9Fnj+LjYc9XTiQRHw5wPVknC3Py5BFyFcxi09MgV
+j88ygir0Tk+2JKV5Hy6ZrwFyHDRSXnsCAwEAAaOBlDCBkTAJBgNVHRMEAjAAMB0G
+A1UdDgQWBBRMFgW1S9JQ3jfwJ49mk6r5KuMS6jBDBgNVHSMEPDA6gBRib2an6vWc
+mIWxYUSDTW+TKPoPhaEXpBUwEzERMA8GA1UEAwwIQ2hhbmdlTWWCCQCYwT1/jnYs
+BjATBgNVHSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQEL
+BQADggEBALtOxPIfj8GztcwlPO24EEE7F3e0dm4qLxD0xj+yU0PkRQLLXa6OP3VE
+XTyDtDVocFX5oClplAebpvnw2OvvBzmxCvyAmWApZdA847QbOoroAG8Z35YOXRiZ
+qQcJ1Tc2Jz4qO+7eFeahvxhCA1n58eQSr0xp7fngtndmRbtdFWS5WFqoQttNjnVg
+sFbzuYC9jQ1QZJ8SyYwLsFcZWo3jr9Bi4oBkwZzGbLvHtkCnyD6ZGd1DXVW+Y0Nk
+z7HYDTNxnV11jmQVtcfH30fVEMW9JS/5d8vzNNGabROUzDCX6Uyejcr1gVgPDYh3
+99J/tdE+U4wByYm7sZGZonC/rNFP4ao=
 -----END CERTIFICATE-----
 </cert>
 <key>
 -----BEGIN PRIVATE KEY-----
-MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDOaHX+a9z2i6mF
-JFYS3IotC5qNXMDMEMXWBptazftwCNRDwZ93G4uY8ZQ4QYCCWnEke0n+a5/MkFmV
-FvfSXXD5J+GNk2uoW2mhkfIwcgXg0bpoiI9Uc22ZU9vuqeG4WfROvX/svwCYbv4/
-+3nkqHTbqmR+t9GJ4JbEfmJYdJXV6vvXWWFdDWYgheUY5JgByn91p+1E05Vbhc8O
-H4fsozptYkX4LxXIbBTtLU2prxvsitz687eCKXM3VnfFnrw2HRe+jvnY9yzsXxkd
-NRb+/JGu2hcGNwxWincj7GSKZMLL/nzAX231OzDb+04SesiZ5Zc6/ENbmormLLDH
-d/XDFXmlAgMBAAECggEBAJdZQ4PuJZTmrcPB9BdafTswcgBLzdcUSWx5Zbr8pOzu
-nG6ecEaO/RqFsXBan1d159afTI9w7Ti7c+R9dfRbrfYURzBfs6Y8eUUO1i6tvR+v
-yWbTE34SMYAnXHIxQSDDXP/LthyrpU0gve++fw+qch2MYKoGMXBPLV4hag2AV0oF
-9a810eVPGUogdbdLkv9a9J6nua1XNUyhws1Bl2psmZVqVmjFcAmO6O6cPk1Y/iJF
-BFM+qhdSevJhvK1YAW1vCheVv6BNvVfRnzcu3YUPJl7CNPk95CuKR0bJw/BePzmE
-1IrcClml35Uf1Qk4+2wgGgNbSRw+td86NC8O434H0gECgYEA7BvmzTMPifnqvnQB
-ohpodBJo/ApjVWhnESUfL4cqQ+Ru/ZDZt1auqe7FeJGxE4r2ktD8JVCy/pxYv9qr
-xUZSB/1lD2ngaFtmGKAaK6qF4+bMxde8/P06KHU06q4HZGfLxa4vRUTQmZO3W73I
-1oDL6RejvYsnevxbgVV7I3i06CUCgYEA38wB2qHGQEvSy3F3cz+jsogU8iu8Zi3B
-rvj3B5veZ3IMikeSxuPVXdaL3GTqeq+mJLZNZXHOqY2yLZG23+pXSZKt3r7npSH2
-y9c5t7GJkSB0TfYlu6lAcEJ49mJSfiB/16jL44LqUhj6jXGIAvq+M0dxBoXKD34q
-AQh1ygte04ECgYEAs9a0v8uKpG+la5d0vwIaWX7EVGWdL6qsBpUd4de0S64tFBpG
-mqz9sRXbd3CRTe9kzIM96zZCgEiaGNf4SfS7+rX5Sfo9IX+sjkk0ZdomzWY4xuEC
-ZDiFGdfcjHwtyT5+KX35J2u476Fh4hD2btv/dPW6lF7vnW+mSybO+j+wm7kCgYEA
-jWd4kG0BN+Tw1uzlvaMrSoXjPjTWQHWO2ICkjWE2AIS2WbTpj9OrIDSMgIAfC8/q
-GW46rute2hEW0OYt94M5DdqpE4HqGZPBPYDLDj8WHeW0twHdS5qghY3qojrzxo/A
-V0JnOWShq6fuv+pJNyC5husQBkAIsQtVfPuceUH/84ECgYEAwwv4+XJ/k+626TvU
-L3oCcGo/8iJIbo6uhfnjQ64hsG+r5nrYAc0esywBM5u2bJsF54ms91smV3Vkv1vV
-nEKnuISIqaCs2PsyEP3zAXX6hVU7uylvyjEWK59e4gP+wOYeJykOyDe2IwOHP5Mo
-hmNiU3Z5nMVswE72eiRH0gG2oJc=
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCn63F7Ec0VbGOP
+lHgzpOt5WZ65rX/Otbje1yFYTvm6dU6X81jC5S7w3mf+fGD2ZrR4gdAnmwZHfgs9
+NFJL3xfCMGxu2tNP3Ie7oCJmq+MyNRhy4tsM0GA6upv1PJw95kGVew8ZuUDCascc
+Tl9hlz+p0+iFzC8BKRfJOdBM6OBrBQafClIIgcPHoEM+yrk2M7k8Bt416oQiAhEz
+Q6jtJAtm9Zub5/foUygyKCMDawVk2+g6zXF2xioNminjbD2ROcn2qNTcR1pcVdMO
+6vRZ4/i42HPV04kER8OcD1ZJwtz8uQRchXMYtPTIFY/PMoIq9E5PtiSleR8uma8B
+chw0Ul57AgMBAAECggEAW1R+Y16aOeW6/PPWsNgpTtZEs16/XfGOvH0r4LkLsLNu
+7MxpYY9/iXid/Vcu8bWIwOZyDaiOsMHIYSCdBjEv3emygFS6i/w5Qv5k14zzxHIG
+ey4R0BVh0W9/tdGidTRQRXoqC2ar51JmO2oRDKZT9Q2RsXwNsMbl7gdo2PvsW6f9
+dfS2U2TXVbJwgHhy072WdzC/+ZbrRvA0ly1BfcrX7qqeLU0/2jSyFSWCyo7SDHx5
+2aeOFL1FlAUG4wrl8jaxV3hQ9dMoz9FBvOcJRO8nYNLE28/tYnm9r7AL9CE8Mc78
+zyLw7yZpJchH36Djk49Ly7VmXWs5HZRBGXrYVg7v+QKBgQDWtfx6anXT1prqriZO
+mBsTLMgrWrbVwpBTgX9TXhy6y2Nb4WLrgM9O+zfbdeAfT5nBbVjhZzdwAdqSMnIm
+2tuKOWdkcyMVDbzBMi+uzsAxfMYdT43mZTUElWyWXOusjtg6im0BK00IbXRDrrbI
+AuLLW5l2iBweOAUStPDr3vm5tQKBgQDINfipJG8K7zv0uPDASETqp+GIjzXqajEz
+SeN4ZAcm06TUaNf90l7+9PCGLcnk8jMaXqRyU1EIGq63NlqoNdmdwb1WtnYlum1O
+Z5/iveuQIpFJwg5TZQN56xShBveTzihjRrIqpzi8XsGwu2gPww4w4N7HTZQdNDhr
+GsF7l/MVbwKBgAuiOrbrU80RoL08iGjTxwvH7mSi+qskaquLpbl/rPDWGmEdGj4G
+cbUm2YTzoxwvNPaNFTbJX/CauRwYzaSbUS/xIlAICQuX/fU94eWH4FQOHbHy4I5u
+R2wjKIoRKNfluYOagoOAtCDTxWvxaIf32BAKu4r3nwZoJKY51aACKefNAoGAZaAP
+sjuOKey5cEUX32JPqRTCRED9SxnQE4qj7g5IGws/FZqKWIqaMaw/ErzXSGEwU2hK
+7MUh0o1ItjLe3ZdH+O3In+VKH2h751puK/ffRHBncxsPjoEtvIr5E6unq9zvX0UZ
+VtE+2U733i+iaK3H3EOokV3tms1Q/fy8zXGZr/0CgYAygSBQ9fKVK00yQt+hObF5
+t1MA7nrzmHsSUBLMhvJcP/8eSxEn6jMwsGcxK8bDd6qW+h6AOcX+mzSvgo2Lg/rK
+hXowJAlNv5nk+guxDiSot7dUnM565z7ZvN/6OsFb8guFLHGZBUwZmbKZfICDICGv
+FHuFRp30idkfTx3KfxTW/Q==
 -----END PRIVATE KEY-----
 </key>
 <tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
 -----BEGIN OpenVPN Static key V1-----
-f1adfa181129afecc52e2dea34c35aa1
-4a922d379c6b9f44a23b697002aa225d
-af24869dcf28b456b18e047dccf9738d
-e48186ea1427ffd8c172c0e2f67a0b82
-be0e2942e708d9e5eca36b8cbfc0713a
-16c40dff52a928dbc3e539c136e30175
-051d674b940086f59b7d6cfd5fcb21a4
-abc9857cc5960505ed6f02a7adc9af35
-efc89362e69b4e2128b9f36e29cb3e5b
-995710e259d0487eba8cd226d2893f65
-d54244b63e5ea475b80a1c1c134eacca
-5f0f0bd65062b2d9147a709908f9a9bd
-2bfef558258e6186e18892191342d655
-82d081382e3b22f9bd30df799987c3ae
-adaecacc8c59bea09315aeec7dd33eb8
-5cba806517bc2564b1d39b8cb652c6ac
+e66fda208e964ea8a1b2c670868b55b9
+f1446377a15a8424f2ae12239c4b2fae
+02355f799a624ac9d35ac28f72b9589a
+b92528d3259212076abdde70599b59d3
+a9cffdc575a7e4270dafb8b0a3360f7b
+5c330b4bc0b9e7214ba1fe188dc48911
+d382c790377c4219e705478193d90b64
+9764dad055a2066d9f4f2dfa03e7a792
+3dd8831b33bd3966c022f0e0f64a3592
+8d684ac788dcbe095aec5d99036fbaf6
+d6ac4eeae97af4e551b7f578d46881aa
+81f752f65fcc71dc94d9618c445e03db
+cdd5b8c546dcf871e25f667484adb85c
+6850a0ac314af41733b6668b0c9a5664
+67fb82f0920f1a8baa46f2c6c4034d87
+ff3fceb10518867ce64c25ee0027d50c
 -----END OpenVPN Static key V1-----
 </tls-auth>"},
     {"id":2,"file":"client
