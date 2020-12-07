@@ -15,7 +15,7 @@
     {"id":5, "app":"ir.tejaratbank.totp.mobile.android"}
   ],
   "free":[
-    {"id":0, "file":0, "city":"آلمان","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
+    {"id":0, "file":0, "city":"آلمان","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"b"},
     {"id":1, "file":1, "city":"هلند","country":"Amsterdam","image":"amsterdam","ip":"178.62.244.134","active":"true","signal":"a"},
     {"id":2, "file":2, "city":"کانادا","country":"Canada","image":"canada","ip":"51.68.191.75","active":"true","signal":"a"},
   ]
