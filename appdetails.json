@@ -17,6 +17,6 @@
   "free":[
     {"id":0, "file":0, "city":"آلمان","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"c"},
     {"id":1, "file":1, "city":"هلند","country":"Netherlands","image":"netherlands","ip":"178.62.244.134","active":"true","signal":"a"},
-    {"id":2, "file":2, "city":"سوچلما","country":"Canada","image":"Canada","ip":"138.197.134.18","active":"true","signal":"a"}
+    {"id":2, "file":2, "city":"سوچلما","country":"Canada","image":"canada","ip":"138.197.134.18","active":"true","signal":"a"}
   ]
 }
